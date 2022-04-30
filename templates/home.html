@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <center>
+        <br><br>
+        <input type="text" name="master" placeholder="Master String" style="height:25px;font-size:14pt;" required><br><br>
+        <input type="text" name="field1" placeholder="String 1" style="height:25px;font-size:14pt;" required>{% if field1 %} {{ field1 }} {% endif %}<br><br>
+        <input type="text" name="field2" placeholder="String 2" style="height:25px;font-size:14pt;" required>{% if field2 %} {{ field2 }} {% endif %}<br><br>
+        <input type="text" name="field3" placeholder="String 3" style="height:25px;font-size:14pt;" required>{% if field3 %} {{ field3 }} {% endif %}<br><br>
+        <input type="text" name="field4" placeholder="String 4" style="height:25px;font-size:14pt;" required>{% if field4 %} {{ field4 }} {% endif %}<br><br>
+        <input type="submit" value="Submit">
+    </center>
+
+</form>
+</body>
+</html>
